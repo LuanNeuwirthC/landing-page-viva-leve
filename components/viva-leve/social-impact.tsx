@@ -47,7 +47,7 @@ export function SocialImpact() {
           alt="Comunidade"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#4A7A5A]/90" />
+        <div className="absolute inset-0 bg-[#4E8C3F]/90" />
       </div>
 
       <div ref={ref} className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

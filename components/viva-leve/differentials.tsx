@@ -40,7 +40,7 @@ export function Differentials() {
   const { ref, isInView } = useInView()
 
   return (
-    <section className="py-16 lg:py-24 bg-[#4A7A5A]">
+    <section className="py-16 lg:py-24 bg-[#4E8C3F]">
       <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-12 ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}>
           <h2 className="text-3xl sm:text-4xl font-bold text-white text-balance">
@@ -52,18 +52,18 @@ export function Differentials() {
           {differentials.map((diff, index) => (
             <div
               key={diff.title}
-              className={`bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 ${
+              className={`bg-white/10 backdrop-blur-[8px] border border-white/20 rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 ${
                 isInView ? 'animate-fade-in-up' : 'opacity-0'
               }`}
               style={{ animationDelay: `${(index + 1) * 100}ms` }}
             >
-              <div className="w-12 h-12 bg-[#A85438]/20 rounded-xl flex items-center justify-center mb-4">
-                <diff.icon className="w-6 h-6 text-[#A85438]" />
+              <div className="w-12 h-12 bg-white/15 backdrop-blur-[4px] rounded-xl flex items-center justify-center mb-4">
+                <diff.icon className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">
                 {diff.title}
               </h3>
-              <p className="text-[#E8EDE0] leading-relaxed text-sm">
+              <p className="text-white/85 leading-relaxed text-sm">
                 {diff.description}
               </p>
             </div>

@@ -21,27 +21,27 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className={`${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#4A7A5A] leading-tight text-balance">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#4E8C3F] leading-tight text-balance">
               <span className="text-[1.1em] font-extrabold">Viva Leve</span> — Cuide do seu corpo e da sua mente, do seu jeito.
             </h1>
             <p className="mt-6 text-lg text-[#333333] leading-relaxed max-w-xl">
               A Viva Leve oferece bem-estar completo para quem tem uma rotina corrida — de forma simples, acessível e sem pressão.
             </p>
-            <p className="mt-3 text-lg text-[#7A9E7E] italic font-medium">
+            <p className="mt-3 text-lg text-[#6EA85E] italic font-medium">
               Respire. Viva leve.
             </p>
             
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg"
-                className="bg-[#4A7A5A] hover:bg-[#2D4A35] text-white font-semibold px-8 py-6 rounded-full text-lg transition-all duration-300"
+                className="bg-[#4E8C3F] hover:bg-[#3A6B2E] text-white font-semibold px-8 py-6 rounded-full text-lg transition-all duration-300"
               >
                 Começar 7 dias grátis
               </Button>
               <Button 
                 size="lg"
                 variant="outline"
-                className="border-2 border-[#4A7A5A] text-[#4A7A5A] hover:bg-[#4A7A5A] hover:text-white font-semibold px-8 py-6 rounded-full text-lg transition-all duration-300"
+                className="border-2 border-[#4E8C3F] text-[#4E8C3F] hover:bg-[#4E8C3F] hover:text-white font-semibold px-8 py-6 rounded-full text-lg transition-all duration-300"
               >
                 Saiba mais
               </Button>
@@ -60,7 +60,7 @@ export function Hero() {
                 alt="Pessoa meditando em ambiente natural"
                 className="w-full h-[400px] lg:h-[500px] object-cover rounded-3xl shadow-2xl"
               />
-              <div className="absolute inset-0 rounded-3xl ring-1 ring-[#4A7A5A]/20" />
+              <div className="absolute inset-0 rounded-3xl ring-1 ring-[#4E8C3F]/20" />
             </div>
           </div>
         </div>

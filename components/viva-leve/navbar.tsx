@@ -28,8 +28,8 @@ export function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/75 backdrop-blur-[16px] border-b border-[#4A7A5A]/15 shadow-sm' 
-        : 'bg-white/95 backdrop-blur-sm border-b border-[#4A7A5A]/10'
+        ? 'bg-white/75 backdrop-blur-[16px] border-b border-[#4E8C3F]/15 shadow-sm' 
+        : 'bg-white/95 backdrop-blur-sm border-b border-[#4E8C3F]/10'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
@@ -51,7 +51,7 @@ export function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-[#4A7A5A] hover:text-[#2D4A35] transition-colors font-medium"
+                className="text-[#4E8C3F] hover:text-[#3A6B2E] transition-colors font-medium"
               >
                 {link.name}
               </a>
@@ -61,7 +61,7 @@ export function Navbar() {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Button 
-              className="bg-[#4A7A5A] hover:bg-[#2D4A35] text-white font-semibold px-6 py-2 rounded-full transition-all duration-300"
+              className="bg-[#4E8C3F] hover:bg-[#3A6B2E] text-white font-semibold px-6 py-2 rounded-full transition-all duration-300"
             >
               Comece grátis por 7 dias
             </Button>
@@ -69,7 +69,7 @@ export function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-[#4A7A5A]"
+            className="lg:hidden text-[#4E8C3F]"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -79,20 +79,20 @@ export function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden py-4 border-t border-[#4A7A5A]/10">
+          <div className="lg:hidden py-4 border-t border-[#4E8C3F]/10">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-[#4A7A5A] hover:text-[#2D4A35] transition-colors font-medium py-2"
+                  className="text-[#4E8C3F] hover:text-[#3A6B2E] transition-colors font-medium py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
                 </a>
               ))}
               <Button 
-                className="bg-[#4A7A5A] hover:bg-[#2D4A35] text-white font-semibold px-6 py-2 rounded-full transition-all duration-300 w-full mt-4"
+                className="bg-[#4E8C3F] hover:bg-[#3A6B2E] text-white font-semibold px-6 py-2 rounded-full transition-all duration-300 w-full mt-4"
               >
                 Comece grátis por 7 dias
               </Button>

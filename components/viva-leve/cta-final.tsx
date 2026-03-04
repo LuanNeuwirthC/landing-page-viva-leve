@@ -15,7 +15,7 @@ export function CTAFinal() {
           alt="Natureza tranquila"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#4A7A5A]/85" />
+        <div className="absolute inset-0 bg-[#4E8C3F]/85" />
       </div>
 
       <div ref={ref} className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -31,7 +31,7 @@ export function CTAFinal() {
         <div className={`mt-10 ${isInView ? 'animate-fade-in-up animation-delay-100' : 'opacity-0'}`}>
           <Button
             size="lg"
-            className="bg-white hover:bg-[#E8EDE0] text-[#4A7A5A] font-bold px-10 py-7 rounded-full text-lg transition-all duration-300 shadow-xl hover:shadow-2xl"
+            className="bg-white hover:bg-[#E8EDE0] text-[#4E8C3F] font-bold px-10 py-7 rounded-full text-lg transition-all duration-300 shadow-xl hover:shadow-2xl"
           >
             Começar agora gratuitamente
           </Button>

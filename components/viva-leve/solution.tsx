@@ -37,7 +37,7 @@ export function Solution() {
     <section id="servicos" className="py-16 lg:py-24 bg-viva-beige">
       <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-12 ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#4A7A5A] text-balance max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#4E8C3F] text-balance max-w-3xl mx-auto">
             Tudo o que você precisa para viver mais leve, em um só lugar
           </h2>
         </div>
@@ -46,7 +46,7 @@ export function Solution() {
           {solutions.map((solution, index) => (
             <div
               key={solution.title}
-              className={`group bg-white rounded-2xl overflow-hidden border-t-4 border-t-[#4A7A5A] hover:shadow-xl hover:shadow-[#4A7A5A]/10 transition-all duration-300 ${
+              className={`group bg-white rounded-2xl overflow-hidden border-t-4 border-t-[#4E8C3F] hover:shadow-xl hover:shadow-[#4E8C3F]/10 transition-all duration-300 ${
                 isInView ? 'animate-fade-in-up' : 'opacity-0'
               }`}
               style={{ animationDelay: `${(index + 1) * 100}ms` }}
@@ -60,7 +60,7 @@ export function Solution() {
                 <div className="w-12 h-12 bg-[#A85438]/10 rounded-xl flex items-center justify-center mb-4">
                   <solution.icon className="w-6 h-6 text-[#A85438]" />
                 </div>
-                <h3 className="text-xl font-bold text-[#4A7A5A] mb-2">
+                <h3 className="text-xl font-bold text-[#4E8C3F] mb-2">
                   {solution.title}
                 </h3>
                 <p className="text-[#333333] leading-relaxed">

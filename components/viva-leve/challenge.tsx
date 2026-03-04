@@ -31,7 +31,7 @@ export function Challenge() {
     <section id="sobre" className="py-16 lg:py-24 bg-[#E2E7D9]">
       <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-12 ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#4A7A5A] text-balance">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#4E8C3F] text-balance">
             Sabemos como é difícil se cuidar no dia a dia
           </h2>
         </div>
@@ -40,7 +40,7 @@ export function Challenge() {
           {challenges.map((challenge, index) => (
             <div
               key={challenge.title}
-              className={`bg-white rounded-2xl border-t-4 border-t-[#4A7A5A] overflow-hidden hover:shadow-lg transition-all duration-300 ${
+              className={`bg-white rounded-2xl border-t-4 border-t-[#4E8C3F] overflow-hidden hover:shadow-lg transition-all duration-300 ${
                 isInView ? 'animate-fade-in-up' : 'opacity-0'
               }`}
               style={{ animationDelay: `${(index + 1) * 100}ms` }}
@@ -54,7 +54,7 @@ export function Challenge() {
                 <div className="w-12 h-12 bg-[#A85438]/10 rounded-xl flex items-center justify-center mb-4">
                   <challenge.icon className="w-6 h-6 text-[#A85438]" />
                 </div>
-                <h3 className="text-xl font-bold text-[#4A7A5A] mb-2">
+                <h3 className="text-xl font-bold text-[#4E8C3F] mb-2">
                   {challenge.title}
                 </h3>
                 <p className="text-[#333333] leading-relaxed">

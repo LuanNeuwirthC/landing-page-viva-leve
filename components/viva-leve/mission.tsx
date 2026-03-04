@@ -28,7 +28,7 @@ export function Mission() {
     <section className="py-16 lg:py-24 bg-viva-beige">
       <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-12 ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#4A7A5A] text-balance">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#4E8C3F] text-balance">
             O que nos move
           </h2>
         </div>
@@ -43,7 +43,7 @@ export function Mission() {
               <div className="w-16 h-16 bg-[#A85438]/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <item.icon className="w-8 h-8 text-[#A85438]" />
               </div>
-              <h3 className="text-xl font-bold text-[#4A7A5A] mb-4">
+              <h3 className="text-xl font-bold text-[#4E8C3F] mb-4">
                 {item.title}
               </h3>
               <p className="text-[#333333] leading-relaxed">
