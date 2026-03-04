@@ -40,7 +40,7 @@ export function Differentials() {
   const { ref, isInView } = useInView()
 
   return (
-    <section className="py-16 lg:py-24 bg-viva-sage">
+    <section className="py-16 lg:py-24 bg-[#4A7A5A]">
       <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-12 ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}>
           <h2 className="text-3xl sm:text-4xl font-bold text-white text-balance">
@@ -57,13 +57,13 @@ export function Differentials() {
               }`}
               style={{ animationDelay: `${(index + 1) * 100}ms` }}
             >
-              <div className="w-12 h-12 bg-viva-terracotta/20 rounded-xl flex items-center justify-center mb-4">
-                <diff.icon className="w-6 h-6 text-viva-terracotta" />
+              <div className="w-12 h-12 bg-[#C4694A]/20 rounded-xl flex items-center justify-center mb-4">
+                <diff.icon className="w-6 h-6 text-[#C4694A]" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">
                 {diff.title}
               </h3>
-              <p className="text-viva-beige/90 leading-relaxed text-sm">
+              <p className="text-[#E8EDE0] leading-relaxed text-sm">
                 {diff.description}
               </p>
             </div>

@@ -47,7 +47,7 @@ export function SocialImpact() {
           alt="Comunidade"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-viva-sage/85" />
+        <div className="absolute inset-0 bg-[#4A7A5A]/90" />
       </div>
 
       <div ref={ref} className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -65,7 +65,7 @@ export function SocialImpact() {
         <div className={`mt-12 flex flex-wrap justify-center gap-8 ${isInView ? 'animate-fade-in-up animation-delay-100' : 'opacity-0'}`}>
           {donationLevels.map((level) => (
             <div key={level.plan} className="text-center">
-              <div className="text-4xl font-bold text-viva-terracotta">
+              <div className="text-4xl font-bold text-[#C4694A]">
                 {level.percentage}
               </div>
               <div className="mt-2 text-white/90 font-medium">

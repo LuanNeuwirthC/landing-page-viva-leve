@@ -41,7 +41,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-viva-footer py-12">
+    <footer className="bg-[#2D4A35] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Logo */}
@@ -61,7 +61,7 @@ export function Footer() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-viva-beige/80 hover:text-viva-beige transition-colors"
+                className="text-[#E8EDE0]/80 hover:text-white transition-colors"
               >
                 {link.name}
               </a>
@@ -74,7 +74,7 @@ export function Footer() {
               <a
                 key={social.name}
                 href={social.href}
-                className="w-10 h-10 bg-viva-terracotta/20 hover:bg-viva-terracotta/40 rounded-full flex items-center justify-center text-viva-terracotta transition-colors"
+                className="w-10 h-10 bg-[#C4694A]/20 hover:bg-[#C4694A]/40 rounded-full flex items-center justify-center text-[#C4694A] transition-colors"
                 aria-label={social.name}
               >
                 {social.icon}
@@ -83,8 +83,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-viva-beige/10 text-center">
-          <p className="text-viva-beige/60 text-sm">
+        <div className="mt-8 pt-8 border-t border-[#E8EDE0]/10 text-center">
+          <p className="text-[#E8EDE0]/60 text-sm">
             © 2025 Viva Leve. Todos os direitos reservados.
           </p>
         </div>

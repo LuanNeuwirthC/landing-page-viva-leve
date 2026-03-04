@@ -26,7 +26,7 @@ export function BeforeAfter() {
     <section className="py-16 lg:py-24 bg-viva-beige">
       <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-12 ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}>
-          <h2 className="text-3xl sm:text-4xl font-bold text-viva-dark-green text-balance">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#4A7A5A] text-balance">
             Como a Viva Leve transforma sua rotina
           </h2>
         </div>
@@ -40,17 +40,17 @@ export function BeforeAfter() {
                 alt="Pessoa estressada"
                 className="w-full h-64 object-cover rounded-2xl mb-6"
               />
-              <div className="absolute top-4 left-4 bg-viva-terracotta text-white px-4 py-1 rounded-full font-semibold text-sm">
+              <div className="absolute top-4 left-4 bg-[#C4694A] text-white px-4 py-1 rounded-full font-semibold text-sm">
                 Antes
               </div>
             </div>
             <div className="space-y-4">
               {beforeItems.map((item) => (
                 <div key={item} className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-viva-terracotta/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <X className="w-4 h-4 text-viva-terracotta" />
+                  <div className="w-8 h-8 bg-[#C4694A]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <X className="w-4 h-4 text-[#C4694A]" />
                   </div>
-                  <span className="text-gray-600">{item}</span>
+                  <span className="text-[#333333]">{item}</span>
                 </div>
               ))}
             </div>
@@ -64,17 +64,17 @@ export function BeforeAfter() {
                 alt="Pessoa feliz e saudável"
                 className="w-full h-64 object-cover rounded-2xl mb-6"
               />
-              <div className="absolute top-4 left-4 bg-viva-sage text-white px-4 py-1 rounded-full font-semibold text-sm">
+              <div className="absolute top-4 left-4 bg-[#4A7A5A] text-white px-4 py-1 rounded-full font-semibold text-sm">
                 Depois
               </div>
             </div>
             <div className="space-y-4">
               {afterItems.map((item) => (
                 <div key={item} className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-viva-sage/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check className="w-4 h-4 text-viva-sage" />
+                  <div className="w-8 h-8 bg-[#4A7A5A]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check className="w-4 h-4 text-[#4A7A5A]" />
                   </div>
-                  <span className="text-viva-dark-green font-medium">{item}</span>
+                  <span className="text-[#4A7A5A] font-medium">{item}</span>
                 </div>
               ))}
             </div>

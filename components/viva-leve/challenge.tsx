@@ -31,7 +31,7 @@ export function Challenge() {
     <section id="sobre" className="py-16 lg:py-24 bg-[#E2E7D9]">
       <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-12 ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}>
-          <h2 className="text-3xl sm:text-4xl font-bold text-viva-dark-green text-balance">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#4A7A5A] text-balance">
             Sabemos como é difícil se cuidar no dia a dia
           </h2>
         </div>
@@ -40,7 +40,7 @@ export function Challenge() {
           {challenges.map((challenge, index) => (
             <div
               key={challenge.title}
-              className={`bg-white rounded-2xl border border-viva-sage/20 overflow-hidden hover:shadow-lg transition-all duration-300 ${
+              className={`bg-white rounded-2xl border-t-4 border-t-[#4A7A5A] overflow-hidden hover:shadow-lg transition-all duration-300 ${
                 isInView ? 'animate-fade-in-up' : 'opacity-0'
               }`}
               style={{ animationDelay: `${(index + 1) * 100}ms` }}
@@ -51,13 +51,13 @@ export function Challenge() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <div className="w-12 h-12 bg-viva-terracotta/10 rounded-xl flex items-center justify-center mb-4">
-                  <challenge.icon className="w-6 h-6 text-viva-terracotta" />
+                <div className="w-12 h-12 bg-[#C4694A]/10 rounded-xl flex items-center justify-center mb-4">
+                  <challenge.icon className="w-6 h-6 text-[#C4694A]" />
                 </div>
-                <h3 className="text-xl font-bold text-viva-dark-green mb-2">
+                <h3 className="text-xl font-bold text-[#4A7A5A] mb-2">
                   {challenge.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-[#333333] leading-relaxed">
                   {challenge.description}
                 </p>
               </div>

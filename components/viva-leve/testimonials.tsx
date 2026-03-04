@@ -36,7 +36,7 @@ export function Testimonials() {
     <section id="depoimentos" className="py-16 lg:py-24 bg-viva-beige">
       <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-12 ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}>
-          <h2 className="text-3xl sm:text-4xl font-bold text-viva-dark-green text-balance">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#4A7A5A] text-balance">
             Quem já vive mais leve
           </h2>
         </div>
@@ -46,10 +46,10 @@ export function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="bg-white rounded-2xl p-6 border-l-4 border-l-viva-sage shadow-sm hover:shadow-lg transition-all duration-300"
+              className="bg-white rounded-2xl p-6 border-l-4 border-l-[#C4694A] shadow-sm hover:shadow-lg transition-all duration-300"
             >
-              <Quote className="w-8 h-8 text-viva-sage/30 mb-4" />
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <Quote className="w-8 h-8 text-[#C4694A]/30 mb-4" />
+              <p className="text-[#333333] leading-relaxed mb-6">
                 "{testimonial.text}"
               </p>
               <div className="flex items-center gap-4">
@@ -59,10 +59,10 @@ export function Testimonials() {
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
-                  <div className="font-semibold text-viva-dark-green">
+                  <div className="font-semibold text-[#4A7A5A]">
                     {testimonial.name}
                   </div>
-                  <div className="text-sm text-viva-sage">
+                  <div className="text-sm text-[#C4694A]">
                     {testimonial.plan}
                   </div>
                 </div>
@@ -74,8 +74,8 @@ export function Testimonials() {
         {/* Mobile Carousel */}
         <div className={`md:hidden ${isInView ? 'animate-fade-in-up animation-delay-100' : 'opacity-0'}`}>
           <div className="bg-white rounded-2xl p-6 border-l-4 border-l-viva-sage shadow-sm">
-            <Quote className="w-8 h-8 text-viva-sage/30 mb-4" />
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <Quote className="w-8 h-8 text-[#C4694A]/30 mb-4" />
+            <p className="text-[#333333] leading-relaxed mb-6">
               "{testimonials[current].text}"
             </p>
             <div className="flex items-center gap-4">
@@ -85,10 +85,10 @@ export function Testimonials() {
                 className="w-12 h-12 rounded-full object-cover"
               />
               <div>
-                <div className="font-semibold text-viva-dark-green">
+                <div className="font-semibold text-[#4A7A5A]">
                   {testimonials[current].name}
                 </div>
-                <div className="text-sm text-viva-sage">
+                <div className="text-sm text-[#C4694A]">
                   {testimonials[current].plan}
                 </div>
               </div>
@@ -99,10 +99,10 @@ export function Testimonials() {
           <div className="flex justify-center gap-4 mt-6">
             <button
               onClick={prev}
-              className="w-10 h-10 rounded-full bg-viva-sage/10 hover:bg-viva-sage/20 flex items-center justify-center transition-colors"
+              className="w-10 h-10 rounded-full bg-[#4A7A5A]/10 hover:bg-[#4A7A5A]/20 flex items-center justify-center transition-colors"
               aria-label="Anterior"
             >
-              <ChevronLeft className="w-5 h-5 text-viva-dark-green" />
+              <ChevronLeft className="w-5 h-5 text-[#4A7A5A]" />
             </button>
             <div className="flex items-center gap-2">
               {testimonials.map((_, idx) => (
@@ -110,7 +110,7 @@ export function Testimonials() {
                   key={idx}
                   onClick={() => setCurrent(idx)}
                   className={`w-2 h-2 rounded-full transition-all ${
-                    idx === current ? 'bg-viva-sage w-6' : 'bg-viva-sage/30'
+                    idx === current ? 'bg-[#4A7A5A] w-6' : 'bg-[#4A7A5A]/30'
                   }`}
                   aria-label={`Depoimento ${idx + 1}`}
                 />
@@ -118,10 +118,10 @@ export function Testimonials() {
             </div>
             <button
               onClick={next}
-              className="w-10 h-10 rounded-full bg-viva-sage/10 hover:bg-viva-sage/20 flex items-center justify-center transition-colors"
+              className="w-10 h-10 rounded-full bg-[#4A7A5A]/10 hover:bg-[#4A7A5A]/20 flex items-center justify-center transition-colors"
               aria-label="Próximo"
             >
-              <ChevronRight className="w-5 h-5 text-viva-dark-green" />
+              <ChevronRight className="w-5 h-5 text-[#4A7A5A]" />
             </button>
           </div>
         </div>

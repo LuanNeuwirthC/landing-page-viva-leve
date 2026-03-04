@@ -15,7 +15,7 @@ export function CTAFinal() {
           alt="Natureza tranquila"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-viva-dark-green/80" />
+        <div className="absolute inset-0 bg-[#4A7A5A]/85" />
       </div>
 
       <div ref={ref} className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -23,7 +23,7 @@ export function CTAFinal() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-balance">
             Pronto para viver mais leve?
           </h2>
-          <p className="mt-6 text-lg text-viva-beige/90 max-w-2xl mx-auto">
+          <p className="mt-6 text-lg text-[#E8EDE0] max-w-2xl mx-auto">
             Comece seus 7 dias grátis agora. Sem cartão de crédito, sem compromisso.
           </p>
         </div>
@@ -31,13 +31,13 @@ export function CTAFinal() {
         <div className={`mt-10 ${isInView ? 'animate-fade-in-up animation-delay-100' : 'opacity-0'}`}>
           <Button
             size="lg"
-            className="bg-white hover:bg-viva-beige text-viva-dark-green font-bold px-10 py-7 rounded-full text-lg transition-all duration-300 shadow-xl hover:shadow-2xl"
+            className="bg-white hover:bg-[#E8EDE0] text-[#4A7A5A] font-bold px-10 py-7 rounded-full text-lg transition-all duration-300 shadow-xl hover:shadow-2xl"
           >
             Começar agora gratuitamente
           </Button>
         </div>
 
-        <p className={`mt-8 text-viva-beige/80 text-lg italic ${isInView ? 'animate-fade-in-up animation-delay-200' : 'opacity-0'}`}>
+        <p className={`mt-8 text-[#E8EDE0]/80 text-lg italic ${isInView ? 'animate-fade-in-up animation-delay-200' : 'opacity-0'}`}>
           Respire. Viva leve.
         </p>
       </div>
