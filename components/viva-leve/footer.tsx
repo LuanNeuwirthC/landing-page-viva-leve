@@ -1,6 +1,6 @@
 "use client"
 
-import { Leaf } from "lucide-react"
+import Image from "next/image"
 
 const footerLinks = [
   { name: "Sobre", href: "#sobre" },
@@ -45,9 +45,14 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <Leaf className="w-8 h-8 text-viva-sage" />
-            <span className="text-xl font-bold text-viva-sage">Viva Leve</span>
+          <a href="#" className="flex items-center">
+            <Image
+              src="/images/logo-vivaleve.png"
+              alt="Viva Leve - Respire. Viva leve."
+              width={140}
+              height={70}
+              className="h-16 w-auto brightness-110"
+            />
           </a>
 
           {/* Links */}
