@@ -57,8 +57,8 @@ export function Differentials() {
               }`}
               style={{ animationDelay: `${(index + 1) * 100}ms` }}
             >
-              <div className="w-12 h-12 bg-[#C4694A]/20 rounded-xl flex items-center justify-center mb-4">
-                <diff.icon className="w-6 h-6 text-[#C4694A]" />
+              <div className="w-12 h-12 bg-[#A85438]/20 rounded-xl flex items-center justify-center mb-4">
+                <diff.icon className="w-6 h-6 text-[#A85438]" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">
                 {diff.title}

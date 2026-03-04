@@ -51,8 +51,8 @@ export function Challenge() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <div className="w-12 h-12 bg-[#C4694A]/10 rounded-xl flex items-center justify-center mb-4">
-                  <challenge.icon className="w-6 h-6 text-[#C4694A]" />
+                <div className="w-12 h-12 bg-[#A85438]/10 rounded-xl flex items-center justify-center mb-4">
+                  <challenge.icon className="w-6 h-6 text-[#A85438]" />
                 </div>
                 <h3 className="text-xl font-bold text-[#4A7A5A] mb-2">
                   {challenge.title}

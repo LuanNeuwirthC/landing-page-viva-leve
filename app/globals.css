@@ -12,7 +12,7 @@
   --popover-foreground: #4A7A5A;
   --primary: #7A9E7E;
   --primary-foreground: #ffffff;
-  --secondary: #C4694A;
+  --secondary: #A85438;
   --secondary-foreground: #ffffff;
   --muted: #E8EDE0;
   --muted-foreground: #6b7280;
@@ -41,7 +41,7 @@
   /* Custom Viva Leve colors */
   --viva-beige: #E8EDE0;
   --viva-sage: #7A9E7E;
-  --viva-terracotta: #C4694A;
+  --viva-terracotta: #A85438;
   --viva-dark-green: #4A7A5A;
   --viva-footer: #2D4A35;
 }
@@ -88,7 +88,7 @@
   /* Viva Leve Color Palette */
   --color-viva-beige: #E8EDE0;
   --color-viva-sage: #7A9E7E;
-  --color-viva-terracotta: #C4694A;
+  --color-viva-terracotta: #A85438;
   --color-viva-dark-green: #4A7A5A;
   --color-viva-footer: #2D4A35;
   --color-background: var(--background);

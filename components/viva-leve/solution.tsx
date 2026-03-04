@@ -57,8 +57,8 @@ export function Solution() {
                 className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="p-6">
-                <div className="w-12 h-12 bg-[#C4694A]/10 rounded-xl flex items-center justify-center mb-4">
-                  <solution.icon className="w-6 h-6 text-[#C4694A]" />
+                <div className="w-12 h-12 bg-[#A85438]/10 rounded-xl flex items-center justify-center mb-4">
+                  <solution.icon className="w-6 h-6 text-[#A85438]" />
                 </div>
                 <h3 className="text-xl font-bold text-[#4A7A5A] mb-2">
                   {solution.title}

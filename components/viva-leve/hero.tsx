@@ -22,10 +22,13 @@ export function Hero() {
           {/* Content */}
           <div className={`${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#4A7A5A] leading-tight text-balance">
-              Cuide do seu corpo e da sua mente, do seu jeito.
+              <span className="text-[1.1em] font-extrabold">Viva Leve</span> — Cuide do seu corpo e da sua mente, do seu jeito.
             </h1>
             <p className="mt-6 text-lg text-[#333333] leading-relaxed max-w-xl">
               A Viva Leve oferece bem-estar completo para quem tem uma rotina corrida — de forma simples, acessível e sem pressão.
+            </p>
+            <p className="mt-3 text-lg text-[#7A9E7E] italic font-medium">
+              Respire. Viva leve.
             </p>
             
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
@@ -44,7 +47,7 @@ export function Hero() {
               </Button>
             </div>
 
-            <div className="mt-6 inline-flex items-center gap-2 bg-[#C4694A]/10 text-[#C4694A] px-4 py-2 rounded-full text-sm font-medium">
+            <div className="mt-6 inline-flex items-center gap-2 bg-[#A85438]/10 text-[#A85438] px-4 py-2 rounded-full text-sm font-medium">
               <span>Sem cartão de crédito • Cancele quando quiser</span>
             </div>
           </div>

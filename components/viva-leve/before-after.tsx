@@ -40,15 +40,15 @@ export function BeforeAfter() {
                 alt="Pessoa estressada"
                 className="w-full h-64 object-cover rounded-2xl mb-6"
               />
-              <div className="absolute top-4 left-4 bg-[#C4694A] text-white px-4 py-1 rounded-full font-semibold text-sm">
+              <div className="absolute top-4 left-4 bg-[#A85438] text-white px-4 py-1 rounded-full font-semibold text-sm">
                 Antes
               </div>
             </div>
             <div className="space-y-4">
               {beforeItems.map((item) => (
                 <div key={item} className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-[#C4694A]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <X className="w-4 h-4 text-[#C4694A]" />
+                  <div className="w-8 h-8 bg-[#A85438]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <X className="w-4 h-4 text-[#A85438]" />
                   </div>
                   <span className="text-[#333333]">{item}</span>
                 </div>

@@ -65,7 +65,7 @@ export function SocialImpact() {
         <div className={`mt-12 flex flex-wrap justify-center gap-8 ${isInView ? 'animate-fade-in-up animation-delay-100' : 'opacity-0'}`}>
           {donationLevels.map((level) => (
             <div key={level.plan} className="text-center">
-              <div className="text-4xl font-bold text-[#C4694A]">
+              <div className="text-4xl font-bold text-[#A85438]">
                 {level.percentage}
               </div>
               <div className="mt-2 text-white/90 font-medium">

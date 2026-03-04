@@ -112,7 +112,7 @@ export function Pricing() {
               }`}
             >
               Anual
-              <span className="bg-[#C4694A] text-white text-xs px-2 py-0.5 rounded-full">
+              <span className="bg-[#A85438] text-white text-xs px-2 py-0.5 rounded-full">
                 10% OFF
               </span>
             </button>
@@ -124,13 +124,15 @@ export function Pricing() {
           {plans.map((plan, index) => (
             <div
               key={plan.name}
-              className={`relative bg-white rounded-2xl border-t-4 border-t-[#4A7A5A] overflow-hidden transition-all duration-300 hover:shadow-xl ${
-                plan.popular ? 'ring-2 ring-[#4A7A5A] shadow-lg' : ''
+              className={`relative rounded-2xl border-t-4 border-t-[#4A7A5A] overflow-hidden transition-all duration-300 hover:shadow-xl ${
+                plan.popular 
+                  ? 'bg-white/80 backdrop-blur-[12px] border border-white/40 shadow-[0_8px_32px_rgba(74,122,90,0.2)] ring-2 ring-[#4A7A5A]' 
+                  : 'bg-white/60 backdrop-blur-[12px] border border-white/40 shadow-[0_8px_32px_rgba(74,122,90,0.15)]'
               } ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}
               style={{ animationDelay: `${(index + 2) * 100}ms` }}
             >
               {plan.popular && (
-                <div className="absolute top-4 right-4 bg-[#C4694A] text-white text-xs px-3 py-1 rounded-full font-semibold">
+                <div className="absolute top-4 right-4 bg-[#4A7A5A]/15 backdrop-blur-[8px] border border-[#4A7A5A]/30 text-[#4A7A5A] text-xs px-3 py-1 rounded-full font-semibold">
                   Mais popular
                 </div>
               )}
@@ -156,7 +158,7 @@ export function Pricing() {
                   ))}
                 </ul>
 
-                <div className="flex items-center gap-2 text-sm text-[#C4694A] mb-6">
+                <div className="flex items-center gap-2 text-sm text-[#A85438] mb-6">
                   <Heart className="w-4 h-4" />
                   <span>{plan.donation}% doado para instituições de caridade</span>
                 </div>
@@ -182,9 +184,9 @@ export function Pricing() {
           {badges.map((badge) => (
             <div
               key={badge.text}
-              className="flex items-center gap-2 bg-[#4A7A5A]/10 text-[#4A7A5A] px-4 py-2 rounded-full"
+              className="flex items-center gap-2 bg-white/45 backdrop-blur-[8px] text-[#4A7A5A] px-4 py-2 rounded-full"
             >
-              <badge.icon className="w-5 h-5 text-[#C4694A]" />
+              <badge.icon className="w-5 h-5 text-[#A85438]" />
               <span className="font-medium text-sm">{badge.text}</span>
             </div>
           ))}

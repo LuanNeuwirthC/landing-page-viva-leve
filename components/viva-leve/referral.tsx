@@ -48,7 +48,7 @@ export function Referral() {
                 <div className="w-20 h-20 bg-[#4A7A5A] rounded-full flex items-center justify-center mx-auto">
                   <item.icon className="w-8 h-8 text-white" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#C4694A] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#A85438] rounded-full flex items-center justify-center text-white font-bold text-sm">
                   {item.step}
                 </div>
               </div>

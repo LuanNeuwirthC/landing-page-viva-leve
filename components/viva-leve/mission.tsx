@@ -40,8 +40,8 @@ export function Mission() {
               className="bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300"
               style={{ animationDelay: `${(index + 1) * 100}ms` }}
             >
-              <div className="w-16 h-16 bg-[#C4694A]/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <item.icon className="w-8 h-8 text-[#C4694A]" />
+              <div className="w-16 h-16 bg-[#A85438]/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <item.icon className="w-8 h-8 text-[#A85438]" />
               </div>
               <h3 className="text-xl font-bold text-[#4A7A5A] mb-4">
                 {item.title}
@@ -49,7 +49,7 @@ export function Mission() {
               <p className="text-[#333333] leading-relaxed">
                 {item.description}
               </p>
-              <div className="w-12 h-1 bg-[#C4694A] rounded-full mx-auto mt-6" />
+              <div className="w-12 h-1 bg-[#A85438] rounded-full mx-auto mt-6" />
             </div>
           ))}
         </div>

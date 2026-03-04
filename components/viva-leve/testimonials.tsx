@@ -46,9 +46,9 @@ export function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="bg-white rounded-2xl p-6 border-l-4 border-l-[#C4694A] shadow-sm hover:shadow-lg transition-all duration-300"
+              className="bg-white/50 backdrop-blur-[8px] border border-white/30 rounded-2xl p-6 border-l-4 border-l-[#A85438] shadow-sm hover:shadow-lg transition-all duration-300"
             >
-              <Quote className="w-8 h-8 text-[#C4694A]/30 mb-4" />
+              <Quote className="w-8 h-8 text-[#A85438]/30 mb-4" />
               <p className="text-[#333333] leading-relaxed mb-6">
                 "{testimonial.text}"
               </p>
@@ -62,7 +62,7 @@ export function Testimonials() {
                   <div className="font-semibold text-[#4A7A5A]">
                     {testimonial.name}
                   </div>
-                  <div className="text-sm text-[#C4694A]">
+                  <div className="text-sm text-[#A85438]">
                     {testimonial.plan}
                   </div>
                 </div>
@@ -73,8 +73,8 @@ export function Testimonials() {
 
         {/* Mobile Carousel */}
         <div className={`md:hidden ${isInView ? 'animate-fade-in-up animation-delay-100' : 'opacity-0'}`}>
-          <div className="bg-white rounded-2xl p-6 border-l-4 border-l-viva-sage shadow-sm">
-            <Quote className="w-8 h-8 text-[#C4694A]/30 mb-4" />
+          <div className="bg-white/50 backdrop-blur-[8px] border border-white/30 rounded-2xl p-6 border-l-4 border-l-[#A85438] shadow-sm">
+            <Quote className="w-8 h-8 text-[#A85438]/30 mb-4" />
             <p className="text-[#333333] leading-relaxed mb-6">
               "{testimonials[current].text}"
             </p>
@@ -88,7 +88,7 @@ export function Testimonials() {
                 <div className="font-semibold text-[#4A7A5A]">
                   {testimonials[current].name}
                 </div>
-                <div className="text-sm text-[#C4694A]">
+                <div className="text-sm text-[#A85438]">
                   {testimonials[current].plan}
                 </div>
               </div>
