@@ -15,12 +15,12 @@ const steps = [
     icon: UserPlus,
     step: 2,
     title: "Amigo assina qualquer plano",
-    description: "Ele também ganha 7 dias grátis"
+    description: "Ele ganha 20% de desconto"
   },
   {
     icon: Gift,
     step: 3,
-    title: "Você ganha 1 mês grátis",
+    title: "Você também ganha 20%",
     description: "Sem limite de indicações"
   }
 ]
@@ -33,11 +33,11 @@ export function Referral() {
       <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-12 ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#4E8C3F] text-balance">
-            Indique um amigo e ganhe 1 mês grátis
+            Indique um amigo e ganhem 20% de desconto
           </h2>
           <p className="mt-4 text-[#333333] max-w-2xl mx-auto">
-            Compartilhe seu link exclusivo. Quando seu amigo assinar qualquer plano, 
-            você ganha automaticamente 1 mês grátis. Sem limite de indicações.
+            Compartilhe seu link exclusivo. Seu amigo ganha 20% de desconto 
+            e você também ganha 20%. Sem limite de indicações.
           </p>
         </div>
 

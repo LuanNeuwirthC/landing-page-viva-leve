@@ -80,7 +80,7 @@ export function SocialImpact() {
           <div className="inline-block bg-white/10 backdrop-blur-sm rounded-2xl px-8 py-6">
             <p className="text-white/80 text-sm mb-2">Total já doado pela comunidade Viva Leve</p>
             <div className="text-4xl sm:text-5xl font-bold text-white">
-              <AnimatedCounter target={127450} />
+              <AnimatedCounter target={743674} />
             </div>
           </div>
         </div>

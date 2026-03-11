@@ -9,7 +9,7 @@ const plans = [
   {
     name: "Essencial",
     monthlyPrice: 29.90,
-    annualPrice: 26.91,
+    annualPrice: 25.42,
     donation: 5,
     popular: false,
     features: [
@@ -24,7 +24,7 @@ const plans = [
   {
     name: "Equilíbrio",
     monthlyPrice: 59.90,
-    annualPrice: 53.91,
+    annualPrice: 50.92,
     donation: 8,
     popular: true,
     features: [
@@ -40,7 +40,7 @@ const plans = [
   {
     name: "Viva Pleno",
     monthlyPrice: 99.90,
-    annualPrice: 89.91,
+    annualPrice: 84.92,
     donation: 10,
     popular: false,
     features: [
@@ -57,7 +57,7 @@ const plans = [
   {
     name: "Empresa",
     monthlyPrice: 29.90,
-    annualPrice: 29.90,
+    annualPrice: 25.42,
     donation: 8,
     popular: false,
     perUser: true,
@@ -74,8 +74,8 @@ const plans = [
 
 const badges = [
   { icon: CreditCard, text: "7 dias grátis sem cartão" },
-  { icon: Percent, text: "10% OFF no plano anual" },
-  { icon: Gift, text: "Indique e ganhe 1 mês grátis" }
+  { icon: Percent, text: "15% OFF no plano anual" },
+  { icon: Gift, text: "Indique e ganhem 20% de desconto" }
 ]
 
 export function Pricing() {
@@ -113,7 +113,7 @@ export function Pricing() {
             >
               Anual
               <span className="bg-[#A85438] text-white text-xs px-2 py-0.5 rounded-full">
-                10% OFF
+                15% OFF
               </span>
             </button>
           </div>
