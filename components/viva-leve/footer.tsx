@@ -4,9 +4,10 @@ import Image from "next/image"
 
 const footerLinks = [
   { name: "Sobre", href: "#sobre" },
-  { name: "Serviços", href: "#servicos" },
+  { name: "Servicos", href: "#servicos" },
   { name: "Planos", href: "#planos" },
-  { name: "Contato", href: "#contato" }
+  { name: "Depoimentos", href: "#depoimentos" },
+  { name: "Indicar", href: "#indicar" }
 ]
 
 const socialLinks = [

@@ -61,15 +61,22 @@ export function SocialImpact() {
           </p>
         </div>
 
-        {/* Donation Levels */}
-        <div className={`mt-12 flex flex-wrap justify-center gap-8 ${isInView ? 'animate-fade-in-up animation-delay-100' : 'opacity-0'}`}>
-          {donationLevels.map((level) => (
-            <div key={level.plan} className="text-center">
-              <div className="text-4xl font-bold text-[#A85438]">
+        {/* Donation Levels - Translucent Cards */}
+        <div className={`mt-12 grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto ${isInView ? 'animate-fade-in-up animation-delay-100' : 'opacity-0'}`}>
+          {donationLevels.map((level, index) => (
+            <div 
+              key={level.plan} 
+              className="bg-white/10 backdrop-blur-[12px] border border-white/20 rounded-2xl p-6 text-center hover:bg-white/15 transition-all duration-300"
+              style={{ animationDelay: `${(index + 1) * 100}ms` }}
+            >
+              <div className="text-5xl font-bold text-white mb-2">
                 {level.percentage}
               </div>
-              <div className="mt-2 text-white/90 font-medium">
+              <div className="text-white/90 font-semibold text-lg">
                 {level.plan}
+              </div>
+              <div className="mt-3 text-white/70 text-sm">
+                doado por assinatura
               </div>
             </div>
           ))}

@@ -32,19 +32,23 @@ export function Hero() {
             </p>
             
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg"
-                className="bg-[#4E8C3F] hover:bg-[#3A6B2E] text-white font-semibold px-8 py-6 rounded-full text-lg transition-all duration-300"
-              >
-                Começar 7 dias grátis
-              </Button>
-              <Button 
-                size="lg"
-                variant="outline"
-                className="border-2 border-[#4E8C3F] text-[#4E8C3F] hover:bg-[#4E8C3F] hover:text-white font-semibold px-8 py-6 rounded-full text-lg transition-all duration-300"
-              >
-                Saiba mais
-              </Button>
+              <a href="#planos">
+                <Button 
+                  size="lg"
+                  className="bg-[#4E8C3F] hover:bg-[#3A6B2E] text-white font-semibold px-8 py-6 rounded-full text-lg transition-all duration-300 w-full sm:w-auto"
+                >
+                  Comecar 7 dias gratis
+                </Button>
+              </a>
+              <a href="#servicos">
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-[#4E8C3F] text-[#4E8C3F] hover:bg-[#4E8C3F] hover:text-white font-semibold px-8 py-6 rounded-full text-lg transition-all duration-300 w-full sm:w-auto"
+                >
+                  Saiba mais
+                </Button>
+              </a>
             </div>
 
             <div className="mt-6 inline-flex items-center gap-2 bg-[#A85438]/10 text-[#A85438] px-4 py-2 rounded-full text-sm font-medium">
