@@ -37,10 +37,10 @@ export function Navbar() {
           <a href="#" className="flex items-center">
             <Image
               src="/images/logo-vivaleve.png"
-              alt="Viva Leve - Respire. Viva leve."
-              width={120}
-              height={60}
-              className="h-12 w-auto lg:h-14"
+              alt="Viva Leve"
+              width={140}
+              height={70}
+              className="h-14 w-auto lg:h-16"
               priority
             />
           </a>
