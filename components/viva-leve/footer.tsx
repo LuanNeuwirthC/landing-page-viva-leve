@@ -49,10 +49,10 @@ export function Footer() {
           <a href="#" className="flex items-center">
             <Image
               src="/images/logo-vivaleve.png"
-              alt="Viva Leve"
-              width={160}
-              height={80}
-              className="h-20 w-auto brightness-125 contrast-110"
+              alt="Viva Leve - Respire. Viva leve."
+              width={140}
+              height={70}
+              className="h-16 w-auto brightness-110"
             />
           </a>
 
