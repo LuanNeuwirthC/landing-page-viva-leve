@@ -29,12 +29,14 @@ export function CTAFinal() {
         </div>
 
         <div className={`mt-10 ${isInView ? 'animate-fade-in-up animation-delay-100' : 'opacity-0'}`}>
-          <Button
-            size="lg"
-            className="bg-white hover:bg-[#E8EDE0] text-[#4E8C3F] font-bold px-10 py-7 rounded-full text-lg transition-all duration-300 shadow-xl hover:shadow-2xl"
-          >
-            Começar agora gratuitamente
-          </Button>
+          <a href="#planos">
+            <Button
+              size="lg"
+              className="bg-white hover:bg-[#E8EDE0] text-[#4E8C3F] font-bold px-10 py-7 rounded-full text-lg transition-all duration-300 shadow-xl hover:shadow-2xl"
+            >
+              Comecar agora gratuitamente
+            </Button>
+          </a>
         </div>
 
         <p className={`mt-8 text-[#E8EDE0]/80 text-lg italic ${isInView ? 'animate-fade-in-up animation-delay-200' : 'opacity-0'}`}>

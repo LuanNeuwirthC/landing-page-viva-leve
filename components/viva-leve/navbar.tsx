@@ -7,10 +7,10 @@ import Image from "next/image"
 
 const navLinks = [
   { name: "Sobre", href: "#sobre" },
-  { name: "Serviços", href: "#servicos" },
+  { name: "Servicos", href: "#servicos" },
   { name: "Planos", href: "#planos" },
   { name: "Depoimentos", href: "#depoimentos" },
-  { name: "Contato", href: "#contato" },
+  { name: "Indicar", href: "#indicar" },
 ]
 
 export function Navbar() {
@@ -37,10 +37,10 @@ export function Navbar() {
           <a href="#" className="flex items-center">
             <Image
               src="/images/logo-vivaleve.png"
-              alt="Viva Leve - Respire. Viva leve."
-              width={120}
-              height={60}
-              className="h-12 w-auto lg:h-14"
+              alt="Viva Leve"
+              width={140}
+              height={70}
+              className="h-14 w-auto lg:h-16"
               priority
             />
           </a>
@@ -60,11 +60,13 @@ export function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button 
-              className="bg-[#4E8C3F] hover:bg-[#3A6B2E] text-white font-semibold px-6 py-2 rounded-full transition-all duration-300"
-            >
-              Comece grátis por 7 dias
-            </Button>
+            <a href="#planos">
+              <Button 
+                className="bg-[#4E8C3F] hover:bg-[#3A6B2E] text-white font-semibold px-6 py-2 rounded-full transition-all duration-300"
+              >
+                Comece gratis por 7 dias
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -91,11 +93,13 @@ export function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <Button 
-                className="bg-[#4E8C3F] hover:bg-[#3A6B2E] text-white font-semibold px-6 py-2 rounded-full transition-all duration-300 w-full mt-4"
-              >
-                Comece grátis por 7 dias
-              </Button>
+              <a href="#planos" onClick={() => setIsOpen(false)}>
+                <Button 
+                  className="bg-[#4E8C3F] hover:bg-[#3A6B2E] text-white font-semibold px-6 py-2 rounded-full transition-all duration-300 w-full mt-4"
+                >
+                  Comece gratis por 7 dias
+                </Button>
+              </a>
             </div>
           </div>
         )}
