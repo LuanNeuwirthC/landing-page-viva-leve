@@ -29,7 +29,7 @@ const steps = [
 export function Referral() {
   const { ref, isInView } = useInView()
   const [copied, setCopied] = useState(false)
-  const referralLink = "vivaleve.com.br/indicar/seu-codigo"
+  const referralLink = "v0-viva-leve-site.vercel.app"
 
   const handleCopy = () => {
     navigator.clipboard.writeText(`https://${referralLink}`)
@@ -91,7 +91,7 @@ export function Referral() {
         <div className={`max-w-2xl mx-auto ${isInView ? 'animate-fade-in-up animation-delay-200' : 'opacity-0'}`}>
           <div className="bg-white/80 backdrop-blur-[12px] border border-white/50 rounded-2xl p-6 shadow-lg">
             <p className="text-center text-[#4E8C3F] font-semibold mb-4">
-              Seu link de indicacao
+              Seu link de indicação
             </p>
             
             {/* Link Input with Copy Button */}

@@ -6,21 +6,21 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Ana Silva",
+    name: "Renato Cariani",
     plan: "Plano Equilíbrio",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd7a-nYD-OP_TMA5zR3lNWOkiyGqjJTsPG4Q&s",
     text: "A Viva Leve transformou minha rotina. Finalmente encontrei um jeito prático de cuidar da minha saúde sem culpa e sem pressão."
   },
   {
-    name: "Carlos Mendes",
+    name: "Cristiano Ronaldo",
     plan: "Plano Viva Pleno",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+    image: "https://www.ogol.com.br/img/jogadores/new/15/79/1579_cristiano_ronaldo_20251228003106.png",
     text: "As consultas online são incríveis! Tenho acompanhamento personalizado que cabe na minha agenda corrida de executivo."
   },
   {
-    name: "Mariana Costa",
+    name: "Virgínia Fonseca",
     plan: "Plano Essencial",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+    image: "https://yt3.googleusercontent.com/7gEtAHi63LAYgz4HmaB-m-Y4VZUGLFOJofq3MluJUKanwYlf19WnxzD2QgOYleS6uxEdsipjNw=s900-c-k-c0x00ffffff-no-rj",
     text: "Comecei com meditação e hoje pratico yoga todos os dias. A Viva Leve mudou minha relação com o autocuidado."
   }
 ]
